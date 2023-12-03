@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">androidLab2</string>
+    <string name="headLine">Shopping List</string>
+    <string name="testText">testText</string>
+    <string name="button_delete_content_description">Delete</string>
+    <string name="add_new_item">Add new item</string>
+</resources>

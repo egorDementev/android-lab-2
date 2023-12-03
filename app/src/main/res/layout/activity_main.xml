@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#1E1E1E">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+
+            android:textSize="35sp"
+            android:textColor="#E27065"
+            android:text="@string/headLine"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_shopping"
+
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="60dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextNewItem"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+
+            android:hint="@string/add_new_item"
+            android:textColorHint="#333333"
+
+            android:textColor="@color/white"
+
+            android:layout_marginStart="30dp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageButton
+            android:id="@+id/buttonAddItem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="321dp"
+
+            android:background="@drawable/circular_button_background"
+            android:contentDescription="@string/button_delete_content_description"
+            android:onClick="addItem"
+
+            android:src="@android:drawable/ic_input_add"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
